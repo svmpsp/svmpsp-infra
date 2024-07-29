@@ -1,0 +1,4 @@
+config:
+  digitalocean:token:
+    secure: AAABAEqpdvj+Oj8k0CjHi4+0iGwK1Tzjnqg+4+Uj7a8IAgT2x9WwBhidGpSEVLDj3tNbTGuowLy3F+FIqXI7v14dog3XA+x9ILBznBWvnz4s1c5+RHdc+KhbiQMStB6lxidcmsLShg==
+  pulumi:template: digitalocean-python

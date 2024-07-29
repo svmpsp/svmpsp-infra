@@ -1,0 +1,10 @@
+name: svmpsp-dev-infra
+runtime:
+  name: python
+  options:
+    toolchain: poetry
+description: Nuxt application hosting on Digital Ocean
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: digitalocean-python
