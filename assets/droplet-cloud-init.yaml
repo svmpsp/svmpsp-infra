@@ -1,2 +1,12 @@
+#cloud-config
+users:
+  - name: svmpsp
+    ssh-authorized-keys:
+     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDkA9dQ82TjjNAWFLwWoSZvUKJmcEJka7l7kRD7+M2K7dlUBFtpW6Ww6mN1f5EUgL0UBEIWKaWMfLczQ5gHHMQJLBuJTCnR928H5GxYGIhmtMGlSMm0V4aSZcP99ADbrK9b/yaZqPxqP8pVIunCu2O2DgVVlhWy3XkTr0ihofvrYPl9uiuWVK+aryyC0fCf89IT4lpjQzmPjyMPum4D/6K8U+uU9t9UcPVBrfcSDRqU6tcSPnlY4f6loo3ynlTtG+rh4ZdEmxVEmPZ7QQJt6Pe1WTnCGmrW1HJDPAessbqqGQBLjoVAd8nuvi7QfjwUI57WgnS+XJ3gWnZBH5p0/QsIB89PrD9i9Z3l0/Tl3efrgXOlyQZK1bh+zuQD3axV5S9ddKa7SDNOsY6GdYNUGWWJJKOfDQEeBt4oZ6mpOw112abz4/takQiUqxg+9DSZGUh1vDMgzHRBKCF/SR0/7A2TQkRX7b70wKKOodoT8iaYKwD68zJokQqlIs41+kJm9Bk= svmpsp@DESKTOP-AC0K19C
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+package_update: true
+package_upgrade: true
 packages:
   - nginx
